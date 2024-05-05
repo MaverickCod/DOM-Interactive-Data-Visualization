@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs"></script>
+
+    <title>Monthly sales chart</title>
+    <link rel="shortcut icon" href="ASSETS/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div id="wrapper" class="flex flex-col justify-center items-center h-screen">
+        <div class="text-5xl mt-8 text-center font-semibold">
+            <h1>Monthly Sales Data</h1>
+        </div>
+        <div class="container mx-auto my-10 px-4">
+            <div class="chart-container">
+                <canvas id="lineChart" class="w-full max-w-lg"></canvas>
+            </div>
+        </div>
+    
+        <!-- Button to refresh the page -->
+        <button id="refreshButton" class="bg-sky-500 hover:bg-sky-700 text-neutral-950 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mt-8">Click for New Data</button>
+    </div>
+    
+    
+
+    <script>
+        document.getElementById("refreshButton").onclick = function() {
+            location.reload();
+        };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
