@@ -36,6 +36,8 @@ const lineChart = new Chart("lineChart", {
     },
 });
 
+
+
 // Animate the bars
 
 const bars = lineChart.getDatasetMeta(0).data;
@@ -49,3 +51,4 @@ bars.forEach((bar, index) => {
         delay: index * 100,
     });
 });
+
