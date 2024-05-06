@@ -12,6 +12,7 @@ This is a simple web application to visualize monthly sales data using Chart.js 
 - Displays the data in a bar chart.
 - Animates the bars of the chart for visual appeal.
 - Provides a button to refresh the data and chart.
+- Added logo to Site in Tab view
 
 ## Installation
 
